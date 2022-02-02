@@ -36,7 +36,10 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(url: "https://github.com/EduDo-Inc/swift-composable-architecture", from: "0.21.0")
+    .package(
+      url: "https://github.com/EduDo-Inc/swift-composable-architecture",
+      .branch("debugable")
+    )
   ],
   targets: [
     .target(
